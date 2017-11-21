@@ -1,36 +1,46 @@
 {
-  "name": "Hero",
+  "name": "Work",
+  "plural": "Work",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "small": {
+    "visible": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "default": "work"
+    },
+    "name": {
       "type": "string",
       "required": true
     },
-    "medium": {
+    "url": {
+      "type": "string",
+      "default": ""
+    },
+    "image": {
       "type": "string",
       "required": true
     },
-    "large": {
+    "description": {
       "type": "string",
       "required": true
     },
-    "extraLarge": {
+    "information": {
       "type": "string",
       "required": true
     },
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "subTitle": {
-      "type": "string"
-    },
-    "alt": {
-      "type": "string",
+    "clients": {
+      "type": [
+        "object"
+      ],
       "required": true
     }
   },

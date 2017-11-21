@@ -38,5 +38,9 @@
   "Hero": {
     "dataSource": "db",
     "public": true
+  },
+  "Work": {
+    "dataSource": "db",
+    "public": true
   }
 }
